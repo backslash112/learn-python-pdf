@@ -25,7 +25,7 @@ class person(object):
     def addChild(self, name, age):
         child = person(name, age, parent = self)
         self.children.append(child)
-        self.(self.name, ' added child ', child.name)
+        print(self.name, ' added child ', child.name)
 
     def listChildren(self):
         if len(self.children) > 0:
