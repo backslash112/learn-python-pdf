@@ -11,8 +11,8 @@ def main():
     try:
         quotient = first / second
         print('Quotient 1st/2st = ', quotient)
-    except Exception as e:
-        print('float division by zero, please try again', '\n')
+    except ZeroDivisionError as e:
+        print(e, ': 2st number must be no zero. Please try again', '\n')
         main()
 
 if __name__ == '__main__':
